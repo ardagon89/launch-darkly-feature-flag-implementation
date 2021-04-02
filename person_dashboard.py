@@ -1,4 +1,4 @@
-"""Main module for the Streamlit person_dashboard app"""
+"""Main module for the Streamlit Launch Darkly app"""
 
 
 import requests

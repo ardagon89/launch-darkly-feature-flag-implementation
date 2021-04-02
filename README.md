@@ -2,7 +2,6 @@
 
 Using any language or framework along with the LaunchDarkly SDK, implement a feature flag.
 
-
 ## Getting started - Option 1
 
 Use Python 3.7+.
@@ -20,7 +19,6 @@ streamlit run dashboard.py
 ```
 
 Streamlit will tell you where to find your live app, likely at `localhost:8501`. You can open this address in your browser.
-
 
 ## Getting started - Option 2 (recommended)
 
@@ -50,7 +48,6 @@ NOTE:
 Replace "localhost" by VM IP (ex. "192.168.99.100") if using docker on a VM.
 ```
 
-
 ## Solution
 
 Created a simple web application using streamlit api with separate User and Admin views.
@@ -77,7 +74,7 @@ User:
     This feature is turned on or off using the "cache" feature flag using the LaunchDarkly SDK.
     You can even do a progressive roll-out by migrating only a small percentage of users to the
     new version of the app and slowly increasing the percentage in case of a smooth roll-out.
-    
+
 ![image](https://user-images.githubusercontent.com/55037808/113382352-e0983f80-9346-11eb-867b-9b6ec19fe883.png)
 
     You can go back to the login screen by clicking the Rerun button.
@@ -87,9 +84,8 @@ Admin:
     This page serves the dual purpose of controlling the fraction of users directed to the new version
     of the app and a chart which plots the page load response times of users using the old version of the
     app vs the caching feature version of the page.
-    
-![image](https://user-images.githubusercontent.com/55037808/113382161-7384aa00-9346-11eb-8c3d-36d1afc01c5e.png)
 
+![image](https://user-images.githubusercontent.com/55037808/113382161-7384aa00-9346-11eb-8c3d-36d1afc01c5e.png)
 
     The slider control was origianlly added to control the percentage of users visiting the old version of
     the login page as opposed to the percentage of users visiting the page with caching feature added.
@@ -102,16 +98,14 @@ Admin:
     caching feature vs the version which doesn't use the caching feature.
     As you can clearly see, using the caching feature has reduced the page load time from 5 seconds to < 1 second,
     which is an improvement of more than 80%.
-    
-    
-## Implementation
 
+## Implementation
 
 **The app uses the below images**
 
 ```
 ardagon/launchdarkly:1.0
-                        Core image which contains the Streamlit framework for web application, 
+                        Core image which contains the Streamlit framework for web application,
                         LaunchDarkly Python server SDK for feature flag management,
                         Pymongo for database connectivity &
                         Pandas for rendering the chart
@@ -126,7 +120,6 @@ mongodb
 mongo-express
             For providing an easy-to-use user interface for mongo database management
 ```
-
 
 **The solution includes the below files**
 

@@ -54,6 +54,9 @@ Created a simple web application using streamlit api with separate User and Admi
 
 User:
 
+![image](https://user-images.githubusercontent.com/55037808/113381565-e8ef7b00-9344-11eb-8182-a9770e39ebc8.png)
+
+
     This page presents a simple login page which the users can use to enter into their profile.
     (You can find randomly generated user ids and passwords using the randomuser api.
         https://randomuser.me/api/?seed=usageai&results=10&inc=name,email,login,dob)

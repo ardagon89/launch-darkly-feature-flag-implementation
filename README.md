@@ -58,8 +58,16 @@ User:
 
 
     This page presents a simple login page which the users can use to enter into their profile.
+
+        
+![image](https://user-images.githubusercontent.com/55037808/113381710-4aafe500-9345-11eb-9cfb-0e0dcf2b566d.png)
+
+![image](https://user-images.githubusercontent.com/55037808/113381793-7f23a100-9345-11eb-8062-a5b6efd517db.png)
+
     (You can find randomly generated user ids and passwords using the randomuser api.
         https://randomuser.me/api/?seed=usageai&results=10&inc=name,email,login,dob)
+        
+![image](https://user-images.githubusercontent.com/55037808/113381763-66b38680-9345-11eb-97d3-481c0ffa535b.png)
 
     The initial version of the page calls the api whenever a user logs in.
 

@@ -2,7 +2,7 @@
 
 Using any language or framework along with the LaunchDarkly SDK, implement a feature flag.
 
-## Getting started
+## Getting started - Option 1
 
 Use Python 3.7+.
 
@@ -19,6 +19,34 @@ streamlit run dashboard.py
 ```
 
 Streamlit will tell you where to find your live app, likely at `localhost:8501`. You can open this address in your browser.
+
+## Getting started - Option 2 (recommended)
+
+Use `ardagon/launchdarkly:1.0` docker image.
+
+Execute the below command to bring up the entire stack:
+
+```
+docker-compose -f compose.yaml up -d
+```
+
+Access the Streamlit app at:
+
+```
+http://localhost:8501/
+```
+
+See the db records at:
+
+```
+http://localhost:8081/
+```
+
+NOTE:
+
+```
+Replace "localhost" by VM IP (ex. "192.168.99.100") if using docker on a VM.
+```
 
 ## Solution
 
@@ -53,9 +81,3 @@ Admin:
     caching feature vs the version which doesn't use the caching feature.
     As you can clearly see, using the caching feature has reduced the page load time from 5 seconds to < 1 second,
     which is an improvement of more than 80%.
-
-execute `docker-compose -f compose.yaml up -d` to bring up the entire stack
-and access the app at `http://localhost:8501/`
-and see the db records at `http://localhost:8081/`
-
-#NOTE: Replace "localhost" by VM IP (ex. "192.168.99.100") if using docker on a VM.

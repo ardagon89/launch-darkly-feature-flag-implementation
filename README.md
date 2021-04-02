@@ -106,7 +106,7 @@ Admin:
     
 ## Implementation
 
-The app uses the below images
+**The app uses the below images**
 
 ```
 ardagon/launchdarkly:1.0
@@ -127,7 +127,7 @@ mongo-express
 ```
 
 
-The solution includes the below files
+**The solution includes the below files**
 
 ```
 Dockerfile

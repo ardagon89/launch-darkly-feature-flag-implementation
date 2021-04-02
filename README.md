@@ -27,22 +27,35 @@ Created a simple web application using streamlit api with separate User and Admi
 User:
 
     This page presents a simple login page which the users can use to enter into their profile.
-    (You can find randomly generated user ids and passwords using the randomuser api. https://randomuser.me/api/?seed=usageai&results=10&inc=name,email,login,dob)
+    (You can find randomly generated user ids and passwords using the randomuser api.
+        https://randomuser.me/api/?seed=usageai&results=10&inc=name,email,login,dob)
 
     The initial version of the page calls the api whenever a user logs in.
 
     A new feature is added to this page to cache the api calls to speed up the response time.
 
-    This feature is turned on or off using the "cache" feature flag using the LaunchDarkly SDK. You can even do a progressive roll-out by migrating only a small percentage of users to the new version of the app and slowly increasing the percentage in case of a smooth roll-out.
+    This feature is turned on or off using the "cache" feature flag using the LaunchDarkly SDK.
+    You can even do a progressive roll-out by migrating only a small percentage of users to the
+    new version of the app and slowly increasing the percentage in case of a smooth roll-out.
 
 Admin:
 
-    This page serves the dual purpose of controlling the fraction of users directed to the new version of the app and a chart which plots the page load response times of users using the old version of the app vs the caching feature version of the page.
+    This page serves the dual purpose of controlling the fraction of users directed to the new version
+    of the app and a chart which plots the page load response times of users using the old version of the
+    app vs the caching feature version of the page.
 
-    The slider control was origianlly added to control the percentage of users visiting the old version of the login page as opposed to the percentage of users visiting the page with caching feature added. But it was later removed in favor of controlling the percentage of users visiting the old and the new versions of the login page directly from the LaunchDarkly UI.
+    The slider control was origianlly added to control the percentage of users visiting the old version of
+    the login page as opposed to the percentage of users visiting the page with caching feature added.
+    But it was later removed in favor of controlling the percentage of users visiting the old and
+    the new versions of the login page directly from the LaunchDarkly UI.
 
-    The line chart shows the page load duration of the login page for the version of the app which uses caching feature vs the version which doesn't use caching feature. As you can clearly see, using the caching feature has reduced the page load time from 5 seconds to < 1 second, which is an improvement of more than 80%.
+    The line chart shows the page load duration of the login page for the version of the app which uses the
+    caching feature vs the version which doesn't use the caching feature.
+    As you can clearly see, using the caching feature has reduced the page load time from 5 seconds to < 1 second,
+    which is an improvement of more than 80%.
 
-execute "docker-compose -f compose.yaml up -d" to bring up the entire stack and access the app at "http://localhost:8501/" and see the db records at `http://localhost:8081/`
+execute `docker-compose -f compose.yaml up -d` to bring up the entire stack
+and access the app at `http://localhost:8501/`
+and see the db records at `http://localhost:8081/`
 
 #NOTE: Replace "localhost" by VM IP (ex. "192.168.99.100") if using docker on a VM.

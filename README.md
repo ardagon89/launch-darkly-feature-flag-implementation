@@ -109,7 +109,7 @@ Admin:
 The app uses the below images
 
 ```
-**ardagon/launchdarkly:1.0**
+ardagon/launchdarkly:1.0
                         Core image which contains the Streamlit framework for web application, 
                         LaunchDarkly Python server SDK for feature flag management,
                         Pymongo for database connectivity &
@@ -117,15 +117,69 @@ The app uses the below images
 ```
 
 ```
-**mongodb**
+mongodb
         For storing the data, logs, features and other required parameters in a persistent data store.
 ```
 
 ```
-**mongo-express**
+mongo-express
             For providing an easy-to-use user interface for mongo database management
 ```
 
+
 The solution includes the below files
 
+```
+Dockerfile
+            Contains instruction on how to build the ardagon/launchdarkly:1.0 docker image
+```
 
+```
+compose.yaml
+            Docker compose file build up or tear down the entire streamlit stack including mongo, express and the network
+```
+
+```
+requirements.txt
+            Contains the dependencies of the app
+```
+
+```
+admin.py
+            Contains the code for the Admin page
+```
+
+```
+app.py
+            Contains the code for routing the users to admin and user views
+```
+
+```
+features.py
+            Python code for the features object, which represents the feature flags and their propoerties
+```
+
+```
+logs.py
+            Python code for the logs object, which represents the user login and app performance parameters
+```
+
+```
+mongodb.py
+            Contains the code for saving and retrieving data from mongo document database
+```
+
+```
+multiapp.py
+            Frameworks for running multiple Streamlit applications as a single app.
+```
+
+```
+person_dashboard.py
+            Contains the code for the user login and details pages
+```
+
+```
+user.py
+            A class used to represent a user, fetched from the randomuser API
+```

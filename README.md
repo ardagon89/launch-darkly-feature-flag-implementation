@@ -69,9 +69,15 @@ User:
 
     A new feature is added to this page to cache the api calls to speed up the response time.
 
+![image](https://user-images.githubusercontent.com/55037808/113382510-3d93f580-9347-11eb-88ad-d800eb1e0c2f.png)
+
     This feature is turned on or off using the "cache" feature flag using the LaunchDarkly SDK.
     You can even do a progressive roll-out by migrating only a small percentage of users to the
     new version of the app and slowly increasing the percentage in case of a smooth roll-out.
+    
+![image](https://user-images.githubusercontent.com/55037808/113382352-e0983f80-9346-11eb-867b-9b6ec19fe883.png)
+
+    You can go back to the login screen by clicking the Rerun button.
 
 Admin:
 

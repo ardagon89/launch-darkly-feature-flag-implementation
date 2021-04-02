@@ -108,18 +108,23 @@ Admin:
 
 The app uses the below images
 
-ardagon/launchdarkly:1.0
+```
+**ardagon/launchdarkly:1.0**
                         Core image which contains the Streamlit framework for web application, 
                         LaunchDarkly Python server SDK for feature flag management,
                         Pymongo for database connectivity &
                         Pandas for rendering the chart
-                        
-mongodb
+```
+
+```
+**mongodb**
         For storing the data, logs, features and other required parameters in a persistent data store.
-        
-mongo-express
+```
+
+```
+**mongo-express**
             For providing an easy-to-use user interface for mongo database management
-            
+```
 
 The solution includes the below files
 

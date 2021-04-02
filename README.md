@@ -78,11 +78,16 @@ Admin:
     This page serves the dual purpose of controlling the fraction of users directed to the new version
     of the app and a chart which plots the page load response times of users using the old version of the
     app vs the caching feature version of the page.
+    
+![image](https://user-images.githubusercontent.com/55037808/113382161-7384aa00-9346-11eb-8c3d-36d1afc01c5e.png)
+
 
     The slider control was origianlly added to control the percentage of users visiting the old version of
     the login page as opposed to the percentage of users visiting the page with caching feature added.
     But it was later removed in favor of controlling the percentage of users visiting the old and
     the new versions of the login page directly from the LaunchDarkly UI.
+
+![image](https://user-images.githubusercontent.com/55037808/113382196-8d25f180-9346-11eb-9b85-41ad9521400e.png)
 
     The line chart shows the page load duration of the login page for the version of the app which uses the
     caching feature vs the version which doesn't use the caching feature.
